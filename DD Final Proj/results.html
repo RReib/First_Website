@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Results</title>
+    <link rel="stylesheet" href="css\master.css">
+</head>
+<body>
+    <div class="contact_box">
+        <p>Thank you for submitting your credentials. We will be in touch soon.</p><br>
+        <div id="results"></div><br>
+        <a id="home_link" href="home.html">=Back to Home Page=</a>
+    </div>
+    
+
+    <script>
+        const resultsList= document.getElementById('results')
+        new URLSearchParams(window.location.search).forEach((value, name) => {
+            resultsList.append(`${name}: ${value}`)
+            resultsList.append(document.createElement('br'))
+        })
+    </script>
+</body>
+</html>
