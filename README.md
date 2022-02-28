@@ -1,1 +1,1 @@
-First website, using HTML, CSS, and Javesctipt.
+Basic website, using HTML, CSS, and Javesctipt.
